@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct RegisterResponseDTO: Codable {
+public struct RegisterRequestDTO: Codable {
     
     public let id: UUID
     public let email: String
