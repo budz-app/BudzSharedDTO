@@ -18,12 +18,12 @@ public struct RegisterRequestDTO: Codable {
     public let photoUrl: String
     public let createdDate: Date
     public let phoneNumber: String
-    public let editedTime: Date
-    public let platformId: UUID
-    public let pushAllow: Bool
-    public let petId: UUID
+    public var editedTime: Date? = nil
+    public var platformId: UUID? = nil
+    public var pushAllow: Bool? = nil
+    public var petId: UUID? = nil
     
-    init(id: UUID, email: String, fullName: String, nickName: String, birthDate: String, gender: String, photoUrl: String, createdDate: Date, phoneNumber: String, editedTime: Date, platformId: UUID, pushAllow: Bool, petId: UUID) {
+    init(id: UUID, email: String, fullName: String, nickName: String, birthDate: String, gender: String, photoUrl: String, createdDate: Date, phoneNumber: String, editedTime: Date? = nil, platformId: UUID? = nil, pushAllow: Bool? = nil, petId: UUID? = nil) {
         self.id = id
         self.email = email
         self.fullName = fullName
