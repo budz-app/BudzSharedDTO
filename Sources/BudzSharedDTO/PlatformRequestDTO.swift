@@ -1,0 +1,23 @@
+//
+//  File.swift
+//  
+//
+//  Created by Raphael Torquato on 14/06/23.
+//
+
+import Foundation
+
+public struct PlatformRequestDTO: Codable {
+    
+    public let userId: UUID
+    public let platformName: String
+    public let deviceName: String
+    public let deviceId: UUID
+    
+    public init(userId: UUID, platformName: String, deviceName: String, deviceId: UUID) {
+        self.userId = userId
+        self.platformName = platformName
+        self.deviceName = deviceName
+        self.deviceId = deviceId
+    }
+}
