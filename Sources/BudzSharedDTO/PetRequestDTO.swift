@@ -11,12 +11,12 @@ public struct PetRequestDTO: Codable {
     
     public let userId: UUID
     public let name: String
-    public let specie: String
-    public let breed: String
-    public let weight: String
-    public let birthDate: Date
-    public let photoUrl: String
-    public let main: Bool
+    public let specie: String?
+    public let breed: String?
+    public let weight: String?
+    public let birthDate: Date?
+    public let photoUrl: String?
+    public let main: Bool?
     public var vaccinesId: [UUID?] = []
     
     
@@ -31,5 +31,4 @@ public struct PetRequestDTO: Codable {
         self.main = main
         self.vaccinesId = vaccinesId
     }
-    
 }
