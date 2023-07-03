@@ -12,13 +12,13 @@ public struct ArticleRequestDTO: Codable {
     public var title: String? = nil
     public var description: String? = nil
     public var imageURL: String? = nil
-    public var tag: String? = nil
+    public var tag: Any? = nil
     public var createdDate: String? = nil
     public var subtitle: String? = nil
     public var author: String? = nil
     
     
-    public init(title: String? = nil, description: String? = nil, imageURL: String? = nil, tag: String? = nil, createdDate: String? = nil, subtitle: String? = nil, author: String? = nil) {
+    public init(title: String? = nil, description: String? = nil, imageURL: String? = nil, tag: Any? = nil, createdDate: String? = nil, subtitle: String? = nil, author: String? = nil) {
         
         self.title = title
         self.description = description
