@@ -14,11 +14,11 @@ public struct ArticleResponseDTO: Codable {
     public let subtitle: String
     public let description: String
     public let imageURL: String
-    public let tag: String
+    public let tag: UUID
     public let createdDate: String
     public let author: String
     
-    public init(id: UUID, title: String, subtitle: String, description: String, imageURL: String, tag: String, createdDate: String, author: String) {
+    public init(id: UUID, title: String, subtitle: String, description: String, imageURL: String, tag: UUID, createdDate: String, author: String) {
         self.id = id
         self.title = title
         self.subtitle = subtitle
